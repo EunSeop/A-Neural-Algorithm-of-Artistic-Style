@@ -14,5 +14,10 @@ Lower layer reproduce exact pixel value of the original image
 ## Obtain Style
 Use feature space originally designed to capture texture information.
 This feature space is built on top of the filter responses in each layer in network.
+Feature correlation - correlation between the different filter response over the spatial extent of the feature map.
+ -> Including Feature Correlation of multiple layers
 
-It consis of the correlations between the different filter response over the spatial
+
+## Reconstructing image from style feature(Style representation)
+Capture its general appearance in terms of colour and localised structures.
+Size and complexity of local image increases along the hierarchy.(multi-scale representation)
