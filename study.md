@@ -45,5 +45,10 @@ Content에 강조를 두면 사진내용은 잘 보이지만 예술효과는 잘
 기존 비슷한 작업을 computer vision분야에서는 photorealistic rendering이라고 하는데 여기서는 style transfer 하기 위해 texture transfer를 사용한다.    
 그래서 이 논문에서는 Deep Neural Network를 object recognition에 학습해서 더 고품질의 이미지를 만들어낸다.   
 
+## 과거로 부터 배운거
+Deep Neural Network가 object recognition에 사용되는건 예전 연구중 예술작품이 언제 만들어졌는지 구분하는 style recognition분야에서 쓰였었다.
+거기에선 content representation이라고 하는 network activation 위에 학습되는 방식을 사용했다.
+그래서 우린 stationary feature space를 만들어서 하는게 style classification에서 더 좋은 성능을 낼거라 생각했다. 이것이 우리가 말했던 style representation이다.
 
 
+## Methods
