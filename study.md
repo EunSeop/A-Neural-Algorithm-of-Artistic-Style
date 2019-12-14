@@ -53,9 +53,10 @@ Deep Neural Network가 object recognition에 사용되는건 예전 연구중 �
 
 ## Methods(구현 상세 설명)
 지금까지 설명한 모형은 VGG-Network와 CNN이라는 인간수준의 object detection성능을 가진 모형을 기반으로 만들어졌다.   
-16 convolution, 5 pooling layers of the 19layer VGG-Network을 사용했다.   
+16 convolution, 5 pooling layers of the 19layer VGG-Network을 사용했다.    
 Fully connected layers를 사용하지 않았다.   
-이미지 합성 분야에서 max-pooling 작업을 average pooling 으로 대체하면 grdient flow를 improve하고 appealing results를 약간 더 얻을 수 있다.   
-네트워크 안 각 레이어는 non-linear filter bank로 레이어 포지션에 따라 복잡성이 올라가는 형식이다.
-주어진 입력 데이터 x가 cnn을 통해 각 레이어의 filter response로 encoded 되기 때문이다.
-
+이미지 합성 분야에서 max-pooling 작업을 average pooling 으로 대체하면 grdient flow를 improve하고 appealing results를 약간 더 얻을 수 있다.    
+네트워크 안 각 레이어는 non-linear filter bank로 레이어 포지션에 따라 복잡성이 올라가는 형식이다.   
+주어진 입력 데이터 x가 cnn을 통해 각 레이어의 filter response로 encoded 되기 때문이다.   
+각 다른 레이어에서 encoded된 이미지 정보를 시각화 하기위해서 우리는 gradient descent 를 오리지널 이미지의 feature response와 매치되는 다른 이미지를 찾기 위해 white noise image에 적용했다.   
+![eq1](image/eq1.png)
