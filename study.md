@@ -59,4 +59,4 @@ Fully connected layers를 사용하지 않았다.
 네트워크 안 각 레이어는 non-linear filter bank로 레이어 포지션에 따라 복잡성이 올라가는 형식이다.   
 주어진 입력 데이터 x가 cnn을 통해 각 레이어의 filter response로 encoded 되기 때문이다.   
 각 다른 레이어에서 encoded된 이미지 정보를 시각화 하기위해서 우리는 gradient descent 를 오리지널 이미지의 feature response와 매치되는 다른 이미지를 찾기 위해 white noise image에 적용했다.   
-![eq1](image/eq1.png)
+![eq1](img/eq1.png)  
