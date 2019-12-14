@@ -61,3 +61,5 @@ Fully connected layers를 사용하지 않았다.
 각 다른 레이어에서 encoded된 이미지 정보를 시각화 하기위해서 우리는 gradient descent 를 오리지널 이미지의 feature response와 매치되는 다른 이미지를 찾기 위해 white noise image에 적용했다.   
 p는 original image, x는 generated image, Pl과 Fl은 각각 레이어l에서의 feature representation일때, 두 feature representations의 squared-error loss는 아래와 같다.   
 ![eq1](img/eq1.PNG)  
+
+![eq2](img/eq2.PNG)
