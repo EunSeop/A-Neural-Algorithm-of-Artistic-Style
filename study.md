@@ -1,3 +1,7 @@
+---
+Preview in vscode: Ctrl+Shift+v
+---
+
 https://arxiv.org/abs/1508.06576
 
 Separate and recombine content and style.
@@ -61,5 +65,11 @@ Fully connected layers를 사용하지 않았다.
 각 다른 레이어에서 encoded된 이미지 정보를 시각화 하기위해서 우리는 gradient descent 를 오리지널 이미지의 feature response와 매치되는 다른 이미지를 찾기 위해 white noise image에 적용했다.   
 p는 original image, x는 generated image, Pl과 Fl은 각각 레이어l에서의 feature representation일때, 두 feature representations의 squared-error loss는 아래와 같다.   
 ![eq1](img/eq1.PNG)  
+The derivative of this loss with respect to the activations in layer l equals   
+![eq2](img/eq2.PNG)   
+이미지 x에 대한 기울기는 standard error backpropagation으로 계산할 수 있다.   
+그래서 우리는 initially random image x를 바꿀수있다. cnn 특정 레이어에서 original image p와 동일한 response를 만들때까지.   
+각 레이어 별 CNN response의 top에 style representation을 만들었다. 이건 다른 filter response의 correlation을 계산하는것이다. 이는 input image의 공간확장을 바꿔줄거라 기대하는것이다?    
+Feature correlation은 레이어 l에서 vectorized feature map i,j의 inner product   
+![아직사진안올림](img/eq3.PNG)   
 
-![eq2](img/eq2.PNG)
